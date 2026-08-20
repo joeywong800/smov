@@ -8,6 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "build:pwa": "cross-env VITE_PWA_ENABLED=true vite build",
+    "update-and-build": "pnpm remove @sussy-code/providers && pnpm add github:sussy-code/providers#production && pnpm run build",
+    "update-providers": "pnpm update @sussy-code/providers",
     "test": "vitest run",
     "preview": "vite preview",
     "lint": "eslint --ext .tsx,.ts src",
